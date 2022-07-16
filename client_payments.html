@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, shrink-to-fit=9">
+<meta name="description" content="Gambolthemes">
+<meta name="author" content="Gambolthemes">
+<title>Cloudtask - client Payments</title>
+
+<link rel="icon" type="image/png" href="images/fav.png">
+
+<link href="css/responsive.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/datepicker.min.css" rel="stylesheet">
+<link href="css/jquery.range.css" rel="stylesheet">
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link href="vendor/OwlCarousel/assets/owl.carousel.css" rel="stylesheet">
+<link href="vendor/OwlCarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="vendor/semantic/semantic.min.css">
+
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+
+<div class="modal srch-model fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-xl" role="document">
+<div class="modal-content">
+<div class="modal-header sheader">
+<button type="button" class="close srch-close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+<input type="text" class="srch-input" placeholder="Search Keywords...">
+</div>
+</div>
+</div>
+</div>
+
+<div class="title-bar">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<ol class="title-bar-text">
+<li class="breadcrumb-item"><a href="INDEXPAGE.html">Home</a></li>
+<li class="breadcrumb-item active" aria-current="page">My Account</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+
+<main class="browse-section">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-md-4">
+<div class="account_dt_left">
+<div class="job-center-dt">
+<img src="images/150-1503945_transparent-user-png-default-user-image-png-png.png" alt="">
+<div class="job-urs-dts">
+<div class="dp_upload">
+<input type="file" id="file">
+<label for="file">Upload Photo</label>
+</div>
+<h4>John K</h4>
+<span>UX Designer</span>
+<div class="avialable">Available Full Time<a href="#"><i class="far fa-edit"></i></a></div>
+</div>
+</div>
+<div class="my_websites">
+<ul>
+<li><a href="#" class="web_link"><i class="fas fa-globe"></i>www.companysite.com</a></li>
+<li><a href="#" class="web_link"><i class="far fa-edit"></i>www.blogsite.com</a></li>
+</ul>
+</div>
+<div class="group_skills_bar">
+<h6>Profile Completeness</h6>
+<div class="group_bar1">
+<span>85%</span>
+<div class="progress skill_process">
+<div class="progress-bar progress_bar_skills" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+</div>
+<a href="#" class="skiils_button">Complete Required Skills</a>
+</div>
+<div class="rlt_section">
+<div class="rtl_left">
+<h6>Rating</h6>
+</div>
+<div class="rtl_right">
+<div class="star">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<span>4.9</span>
+</div>
+</div>
+</div>
+<div class="rlt_section">
+<div class="rtl_left">
+<h6>Location</h6>
+</div>
+<div class="rtl_right">
+<span><i class="fas fa-map-marker-alt lc_icon"></i> Nairobi, kenya</span>
+</div>
+<div class="my_location">
+<div id="map"></div>
+</div>
+<ul class="rlt_section2">
+<li>
+<div class="rtl_left2">
+<h6>Hourly Rate</h6>
+</div>
+<div class="rtl_right2"> 
+<span>$50 / hr</span>
+</div>
+</li>
+<li>
+<div class="rtl_left2">
+<h6>Age</h6>
+</div>
+<div class="rtl_right2">
+<span>28</span>
+</div>
+</li>
+<li>
+<div class="rtl_left2">
+<h6>Experenice</h6>
+</div>
+<div class="rtl_right2">
+<span>5 Year</span>
+</div>
+</li>
+<li>
+<div class="rtl_left2">
+<h6>Job Done</h6>
+</div>
+<div class="rtl_right2">
+<span>69</span>
+</div>
+</li>
+</ul>
+</div>
+<div class="social_section3 mb80">
+<div class="social_leftt3">
+<h6>Contact Social Account</h6>
+</div>
+<div class="social_right3">
+<a href="#"><i class="far fa-edit"></i></a>
+</div>
+<ul class="social_accounts">
+	<li><a href="#" class="social_links"><i class="fab fa-facebook-f f1"></i>http://facebook.com/immuli</a></li>
+	<li><a href="#" class="social_links"><i class="fab fa-twitter t1"></i>http://twitter.com/immuli</a></li>
+	<li><a href="#" class="social_links"><i class="fab fa-linkedin-in l1"></i>http://linkedin.com/immuli</a></li>
+	<li><a href="#" class="social_links"><i class="fab fa-github g1"></i>http://github.com/immuli</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-lg-9 col-md-8 mainpage">
+<div class="account_heading">
+<div class="account_hd_left">
+<h2>Manage Your Account</h2>
+</div>
+<div class="account_hd_right">
+<a href="#" class="main_lg_btn">Logout</a>
+</div>
+</div>
+<div class="account_tabs">
+<ul class="nav nav-tabs">
+
+<li class="nav-item">
+<a class="nav-link" href="my_freelancer_profile.html">Profile</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="my_freelancer_portfolio.html">Portfolio</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="my_freelancer_messages.html">Messages</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="my_freelancer_jobs.html">Jobs</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="my_freelancer_bids.html">Bids</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="my_freelancer_reviews.html">Reviews</a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" href="my_freelancer_payments.html">Payment</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="my_freelancer_setting.html"><i class="fas fa-cog"></i></a>
+</li>
+</ul>
+</div>
+<div class="jobs_manage">
+<div class="row">
+<div class="col-lg-3">
+<div class="jobs_tabs">
+<ul class="nav job_nav nav-tabs" id="myTab" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" href="#payment" id="payment-tab" data-toggle="tab">Payments</a>
+</li>
+<li class="nav-item job_nav_item">
+<a class="nav-link" href="#transaction" id="transaction-tab" data-toggle="tab">Transactions</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-lg-9">
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="payment" role="tabpanel">
+<div class="add-ons-dt accordion" id="accordionExample">
+<div class="bookmark_card">
+<button class="bookmark_collapse" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">Earnings</button>
+<div id="collapse1" class="collapse show">
+<div class="card-body">
+<div class="payment_dt">
+<div class="earning_dt">
+<div class="earning_left">
+<h6>Your Earnings</h6>
+<div class="earn_amount">$1500</div>
+</div>
+<div class="earning_right">
+<p>Wallet<a href="#">(Change)</a></p>
+<img src="images/payoneer.png" alt="">
+</div>
+</div>
+<button class="withdraw_btn">WITHDRAW PAYMENT</button>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" id="transaction">
+<div class="view_chart">
+<div class="view_chart_header">
+<h4>Transactions</h4>
+</div>
+<div class="transaction_body">
+<div class="table-responsive-md">
+<table class="table table-striped">
+<thead>
+<tr>
+<th scope="col">Users</th>
+<th scope="col">Projects</th>
+<th scope="col">Payment</th>
+<th scope="col">Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">
+<div class="user_dt_trans">
+<div class="aadd14">Johnson Doe</div>
+<p>ID No.<a href="#">123456</a></p>
+</div>
+</th>
+<td>
+<div class="user_dt_trans">
+<div class="aadd14">Travel Wordpress Theme</div>
+<p>Date :<span>20 oct 2022</span></p>
+</div>
+</td>
+<td>
+<div class="user_dt_trans">
+<div class="aadd14">Paypal</div>
+<p>$800</p>
+</div>
+</td>
+<td>
+<div class="trans_badge">Pending</div>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<div class="user_dt_trans">
+<div class="aadd14">Rock William</div>
+<p>ID No.<a href="#">123450</a></p>
+</div>
+</th>
+<td>
+<div class="user_dt_trans">
+<div class="aadd14">Real Estate Psd Template</div>
+<p>Date :<span>18 oct 2022</span></p>
+</div>
+</td>
+<td>
+<div class="user_dt_trans">
+<div class="aadd14">Credit Card</div>
+<p>$1200</p>
+</div>
+</td>
+<td>
+<div class="trans_badge">Received</div>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<div class="user_dt_trans">
+<div class="aadd14">Jassica Wiliam</div>
+<p>ID No.<a href="#">123445</a></p>
+</div>
+</th>
+<td>
+<div class="user_dt_trans">
+<div class="aadd14">Chatting Android App</div>
+<p>Date :<span>16 oct 2022</span></p>
+</div>
+</td>
+<td>
+<div class="user_dt_trans">
+<div class="aadd14">Credit Card</div>
+<p>$2500</p>
+</div>
+</td>
+<td>
+<div class="trans_badge">Send</div>
+</td>
+</tr>
+<tr>
+<th scope="row">
+<div class="user_dt_trans">
+<div class="aadd14">Albert Smith</div>
+<p>ID No.<a href="#">123405</a></p>
+</div>
+</th>
+<td>
+<div class="user_dt_trans">
+<div class="aadd14">Hotel Booking Html Template</div>
+<p>Date :<span>15 oct 2022</span></p>
+</div>
+</td>
+<td>
+<div class="user_dt_trans">
+<div class="aadd14">Paypal</div>
+<p>$2500</p>
+</div>
+</td>
+<td>
+<div class="trans_badge">Send</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+
+
+<footer class="footer">
+<div class="subscribe-newsletter">
+<div class="container">
+<div class="row justify-content-between">
+<div class="col-lg-6 col-md-6">
+<div class="subcribes">
+<div class="text-step1">
+<h4>Subscribe to Newsletter</h4>
+<div class="btext-heading mt-2" style="color:#acacac; font-size:14px;">
+<i class="fas fa-check-circle"></i>Cras nunc mauris, rhoncus eu justo at, egestas sagittis felis. Ut sed feugiat eros.
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-5 col-md-6">
+<div class="subcribe-input">
+<input class="nltr-input" type="email" placeholder="Your Email Address">
+<button class="s-btn">Subscribe</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-md-3">
+	<div class="about-jobby">
+		<img  class="logo" src="images/LOGO.png">
+	</div>
+</div>
+<div class="col-lg-3 col-md-3">
+<div class="footer-links">
+<h4>About</h4>
+<ul>
+<li><a href="ABOUTPAGE.html">About Us</a></li>
+<li><a href="sign_in.html">Login</a></li>
+<li><a href="my_freelancer_profile.html">My Account</a></li>
+<li><a href="contact_us.html">Contact</a></li>
+<li><a href="privacy_policy.html">Privacy Policy</a></li>
+<li><a href="Terms.html">Terms of Use</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-3">
+<div class="footer-links">
+<h4>For Clients</h4>
+<ul>
+<li><a href="browse_freelancers.html">Browse Freelancers</a></li>
+<li><a href="post_a_job.html">Post a Job</a></li>
+<li><a href="post_a_project.html">Post a Project</a></li>
+<li><a href="pricing_plans.html">Pricing Plans</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-3">
+<div class="footer-links">
+<h4>For Freelancers</h4>
+<ul>
+<li><a href="browse_jobs.html">Browse Jobs</a></li>
+<li><a href="my_freelancer_jobs.html">Jobs Alerts</a></li>
+<li><a href="my_freelancer_jobs.html">Applied Jobs</a></li>
+<li><a href="my_freelancer_bookmarks.html">Bookmarks</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="copy-social">
+<div class="container">
+<div class="row">
+<div class="col-lg-6 col-md-6">
+<div class="copyright">
+<i class="far fa-copyright"></i>Copyright 2022 Cloudtask. All Right Reserved.
+</div>
+</div>
+<div class="col-lg-6 col-md-6">
+<div class="social-icons">
+<ul>
+<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+
+<button onclick="topFunction()" id="pageup" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/datepicker.min.js"></script>
+<script src="js/i18n/datepicker.en.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/OwlCarousel/owl.carousel.js"></script>
+<script src="vendor/semantic/semantic.min.js"></script>
+<script src="js/jquery.range-min.js"></script>
+<script src="js/custom1.js"></script>
+
+<script src='https://unpkg.com/es6-promise@4.2.4/dist/es6-promise.auto.min.js'></script>
+<script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
+<script>
+			mapboxgl.accessToken = 'pk.eyJ1IjoiZ2FtYm9sIiwiYSI6ImNqdm03bzYydDE2cW00YWwyeHprd3FqamcifQ.HBy4R4sRcXgbgn2OteqFkQ';
+			var mapboxClient = mapboxSdk({ accessToken: mapboxgl.accessToken });
+			mapboxClient.geocoding.forwardGeocode({
+			query: 'Ludhiana, India',
+			autocomplete: false,
+			limit: 1
+			})
+			.send()
+			.then(function (response) {
+			if (response && response.body && response.body.features && response.body.features.length) {
+			var feature = response.body.features[0];
+		 
+			var map = new mapboxgl.Map({
+			container: 'map',
+			style: 'mapbox://styles/mapbox/streets-v11',
+			center: [75.8429,30.9042],
+			zoom: 10
+			});				
+  
+			new mapboxgl.Marker()
+			.setLngLat(feature.center)
+			.addTo(map);
+			}
+			
+			// Add zoom and rotation controls to the map.
+			map.addControl(new mapboxgl.NavigationControl());
+			});						
+		</script>
+<script>
+			window.oncontextmenu = function () {
+				return false;
+			}
+			$(document).keydown(function (event) {
+				if (event.keyCode == 123) {
+					return false;
+				}
+				else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)) {
+					return false;
+				}
+			});
+		</script>
+</body>
+
+</html>

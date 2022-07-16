@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, shrink-to-fit=9">
+<meta name="description" content="Gambolthemes">
+<meta name="author" content="Gambolthemes">
+<title>Cloudtask-  client projects</title>
+
+<link href="css/responsive.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/datepicker.min.css" rel="stylesheet">
+<link href="css/jquery.range.css" rel="stylesheet">
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link href="vendor/OwlCarousel/assets/owl.carousel.css" rel="stylesheet">
+<link href="vendor/OwlCarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="vendor/semantic/semantic.min.css">
+</head>
+<body>
+
+<div class="modal srch-model fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-xl" role="document">
+<div class="modal-content">
+<div class="modal-header sheader">
+<button type="button" class="close srch-close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+<input type="text" class="srch-input" placeholder="Search Keywords...">
+</div>
+</div>
+</div>
+</div>
+<div class="title-bar">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<ol class="title-bar-text">
+<li class="breadcrumb-item"><a href="INDEXPAGE.html">Home</a></li>
+<li class="breadcrumb-item active" aria-current="page">Browse Jobs</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+
+<main class="browse-section">
+<div class="container">
+<div class="row">
+
+<div class="col-lg-12 col-md-7 mainpage">
+<div class="bbnr-left">
+</div>
+<div class="main-tabs">
+<div class="res-tabs">
+<div class=" mtab-left">
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+<li class="nav-item">
+<a href="#tab-1" class="nav-link active" data-toggle="tab">Newest Jobs</a>
+</li>
+<li class="nav-item">
+<a href="#tab-2" class="nav-link" data-toggle="tab">Full Time</a>
+</li>
+<li class="nav-item">
+<a href="#tab-3" class="nav-link" data-toggle="tab">Part Time</a>
+</li>
+</ul>
+</div>
+<div class=" mtab-right">
+<ul>
+<li class="sort-list-dt">
+<div class="ui selection dropdown skills-search sort-dropdown">
+<input name="gender" type="hidden" value="default">
+<i class="dropdown icon d-icon"></i>
+<div class="text">Sort By</div>
+<div class="menu">
+<div class="item" data-value="0">Relevance</div>
+<div class="item" data-value="1">New</div>
+<div class="item" data-value="2">Old</div>
+<div class="item" data-value="3">Last 15 Days</div>
+</div>
+</div>
+</li>
+<li class="grid-list">
+<button class="gl-btn" id="grid"><i class="fas fa-th-large"></i></button>
+<button class="gl-btn" id="list"><i class="fas fa-th-list"></i></button>
+</li>
+</ul>
+</div>
+</div>
+<div class="tab-content">
+<div class="tab-pane active" id="tab-1">
+<div class="row  view-group" id="products">
+<div class="lg-item col-lg-6 col-xs-6 grid-group-item1">
+<div class="job-item mt-30">
+<div class="job-top-dt">
+<div class="job-left-dt">
+<img src="images/150-1503945_transparent-user-png-default-user-image-png-png.png" alt="">
+<div class="job-ut-dts">
+<a href="#"><h4>Johnny K</h4></a>
+<span><i class="fas fa-map-marker-alt"></i> New York City</span>
+</div>
+</div>
+<div class="job-right-dt">
+<div class="job-price">$599</div>
+<div class="job-fp">Full Time</div>
+</div>
+</div>
+<div class="job-des-dt">
+<h4>UX Designer</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus pulvinar dolor nec...</p>
+<div class="job-skills">
+<a href="#">UX</a>
+<a href="#">UI</a>
+<a href="#">Photoshop</a>
+<a href="#" class="more-skills">+4</a>
+</div>
+</div>
+<div class="job-buttons">
+<ul class="link-btn">
+<li><a href="job_single_view.html" class="link-j1" title="View Job">View Job</a></li>
+<li class="bkd-pm"><button class="bookmark1" title="bookmark"><i class="fas fa-heart"></i></button></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="lg-item col-lg-6 col-xs-6 grid-group-item1">
+<div class="job-item mt-30">
+<div class="job-top-dt">
+<div class="job-left-dt">
+<img src="images/150-1503945_transparent-user-png-default-user-image-png-png.png" alt="">
+<div class="job-ut-dts">
+<a href="#"><h4>Johnson S</h4></a>
+<span><i class="fas fa-map-marker-alt"></i> India</span>
+</div>
+</div>
+<div class="job-right-dt">
+<div class="job-price">$50/hr</div>
+<div class="job-fp job-prt">Part Time</div>
+</div>
+</div>
+<div class="job-des-dt">
+<h4>PHP Developer</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus pulvinar dolor nec...</p>
+<div class="job-skills">
+<a href="#">Php</a>
+<a href="#">Sql</a>
+<a href="#">Javascript</a>
+<a href="#" class="more-skills">+4</a>
+</div>
+</div>
+<div class="job-buttons">
+<ul class="link-btn">
+<li><a href="job_single_view.html" class="link-j1" title="View Job">View Job</a></li>
+<li class="bkd-pm"><button class="bookmark1" title="bookmark"><i class="fas fa-heart"></i></button></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="lg-item col-lg-6 col-xs-6 grid-group-item1">
+<div class="job-item mt-30">
+<div class="job-top-dt">
+<div class="job-left-dt">
+<img src="images/150-1503945_transparent-user-png-default-user-image-png-png.png" alt="">
+<div class="job-ut-dts">
+<a href="#"><h4>Alfred M</h4></a>
+<span><i class="fas fa-map-marker-alt"></i> Australia</span>
+</div>
+</div>
+<div class="job-right-dt">
+<div class="job-price">$900</div>
+<div class="job-fp">Full Time</div>
+</div>
+</div>
+<div class="job-des-dt">
+<h4>Wordpress Developer</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus pulvinar dolor nec...</p>
+<div class="job-skills">
+<a href="#">Html</a>
+<a href="#">Css</a>
+<a href="#">Wordpress</a>
+<a href="#" class="more-skills">+4</a>
+</div>
+</div>
+<div class="job-buttons">
+<ul class="link-btn">
+<li><a href="job_single_view.html" class="link-j1" title="View Job">View Job</a></li>
+<li class="bkd-pm"><button class="bookmark1" title="bookmark"><i class="fas fa-heart"></i></button></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="lg-item col-lg-6 col-xs-6 grid-group-item1">
+<div class="job-item mt-30">
+<div class="job-top-dt">
+<div class="job-left-dt">
+<img src="images/150-1503945_transparent-user-png-default-user-image-png-png.png" alt="">
+<div class="job-ut-dts">
+<a href="#"><h4>Joy S</h4></a>
+ <span><i class="fas fa-map-marker-alt"></i> India</span>
+</div>
+</div>
+<div class="job-right-dt">
+<div class="job-price">$500</div>
+<div class="job-fp">Full Time</div>
+</div>
+</div>
+<div class="job-des-dt">
+<h4>Graphic Designer</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus pulvinar dolor nec...</p>
+<div class="job-skills">
+<a href="#">Illustrator</a>
+<a href="#">Photoshop</a>
+<a href="#" class="more-skills">+4</a>
+</div>
+</div>
+<div class="job-buttons">
+<ul class="link-btn">
+<li><a href="job_single_view.html" class="link-j1" title="View Job">View Job</a></li>
+<li class="bkd-pm"><button class="bookmark1" title="bookmark"><i class="fas fa-heart"></i></button></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="lg-item col-lg-6 col-xs-6 grid-group-item1">
+<div class="job-item mt-30">
+<div class="job-top-dt">
+<div class="job-left-dt">
+<img src="images/150-1503945_transparent-user-png-default-user-image-png-png.png" alt="">
+<div class="job-ut-dts">
+<a href="#"><h4>Jessica</h4></a>
+<span><i class="fas fa-map-marker-alt"></i> Australia</span>
+</div>
+</div>
+<div class="job-right-dt">
+<div class="job-price">$300</div>
+<div class="job-fp">Full Time</div>
+</div>
+</div>
+<div class="job-des-dt">
+<h4>Delivery Boy</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus pulvinar dolor nec...</p>
+<div class="job-skills">
+<a href="#">Delivery</a>
+<a href="#">Local</a>
+<a href="#">Graduation</a>
+</div>
+</div>
+<div class="job-buttons">
+<ul class="link-btn">
+<li><a href="job_single_view.html" class="link-j1" title="View Job">View Job</a></li>
+<li class="bkd-pm"><button class="bookmark1" title="bookmark"><i class="fas fa-heart"></i></button></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="lg-item col-lg-6 col-xs-6 grid-group-item1">
+<div class="job-item mt-30">
+<div class="job-top-dt">
+<div class="job-left-dt">
+<img src="images/150-1503945_transparent-user-png-default-user-image-png-png.png" alt="">
+<div class="job-ut-dts">
+<a href="#"><h4>Imma A</h4></a>
+<span><i class="fas fa-map-marker-alt"></i> India</span>
+</div>
+</div>
+<div class="job-right-dt">
+<div class="job-price">$60/hr</div>
+<div class="job-fp">Full Time</div>
+</div>
+</div>
+<div class="job-des-dt">
+<h4>Front End Developer</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus pulvinar dolor nec...</p>
+<div class="job-skills">
+<a href="#">Html</a>
+<a href="#">Css</a>
+<a href="#">Boostrap</a>
+<a href="#" class="more-skills">+4</a>
+</div>
+</div>
+<div class="job-buttons">
+<ul class="link-btn">
+<li><a href="job_single_view.html" class="link-j1" title="View Job">View Job</a></li>
+<li class="bkd-pm"><button class="bookmark1" title="bookmark"><i class="fas fa-heart"></i></button></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-12">
+<div class="main-p-pagination">
+<nav aria-label="Page navigation example">
+<ul class="pagination">
+<li class="page-item">
+<a class="page-link" href="#" aria-label="Previous">
+PREV
+</a>
+</li>
+<li class="page-item"><a class="page-link active" href="#">1</a></li>
+<li class="page-item"><a class="page-link" href="#">2</a></li>
+<li class="page-item"><a class="page-link" href="#">...</a></li>
+<li class="page-item"><a class="page-link" href="#">24</a></li>
+<li class="page-item">
+<a class="page-link" href="#" aria-label="Next">
+NEXT
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-pane" id="tab-2">
+<div class="row  view-group" id="products_1">
+<div class="lg-item col-lg-6 col-xs-6 grid-group-item1">
+<div class="job-item mt-30">
+<div class="job-top-dt">
+<div class="job-left-dt">
+<img src="images/150-1503945_transparent-user-png-default-user-image-png-png.png" alt="">
+<div class="job-ut-dts">
+<a href="#"><h4>Johnny</h4></a>
+<span><i class="fas fa-map-marker-alt"></i> New York City</span>
+</div>
+</div>
+<div class="job-right-dt">
+<div class="job-price">$599</div>
+<div class="job-fp">Full Time</div>
+</div>
+</div>
+<div class="job-des-dt">
+<h4>UX Designer</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus pulvinar dolor nec...</p>
+<div class="job-skills">
+<a href="#">UX</a>
+<a href="#">UI</a>
+<a href="#">Photoshop</a>
+<a href="#" class="more-skills">+4</a>
+</div>
+</div>
+<div class="job-buttons">
+<ul class="link-btn">
+<li><a href="job_single_view.html" class="link-j1" title="View Job">View Job</a></li>
+<li class="bkd-pm"><button class="bookmark1" title="bookmark"><i class="fas fa-heart"></i></button></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="lg-item col-lg-6 col-xs-6 grid-group-item1">
+<div class="job-item mt-30">
+<div class="job-top-dt">
+<div class="job-left-dt">
+<img src="images/150-1503945_transparent-user-png-default-user-image-png-png.png" alt="">
+<div class="job-ut-dts">
+<a href="#"><h4>Johnson S</h4></a>
+<span><i class="fas fa-map-marker-alt"></i> India</span>
+</div>
+</div>
+<div class="job-right-dt">
+<div class="job-price">$50/hr</div>
+<div class="job-fp">Full Time</div>
+</div>
+</div>
+<div class="job-des-dt">
+<h4>PHP Developer</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus pulvinar dolor nec...</p>
+<div class="job-skills">
+<a href="#">Php</a>
+<a href="#">Sql</a>
+<a href="#">Javascript</a>
+<a href="#" class="more-skills">+4</a>
+</div>
+</div>
+<div class="job-buttons">
+<ul class="link-btn">
+<li><a href="job_single_view.html" class="link-j1" title="View Job">View Job</a></li>
+<li class="bkd-pm"><button class="bookmark1" title="bookmark"><i class="fas fa-heart"></i></button></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="lg-item col-lg-6 col-xs-6 grid-group-item1">
+<div class="job-item mt-30">
+<div class="job-top-dt">
+<div class="job-left-dt">
+<img src="images/150-1503945_transparent-user-png-default-user-image-png-png.png" alt="">
+<div class="job-ut-dts">
+<a href="#"><h4>Imma A</h4></a>
+<span><i class="fas fa-map-marker-alt"></i> Australia</span>
+</div>
+</div>
+<div class="job-right-dt">
+<div class="job-price">$900</div>
+<div class="job-fp">Full Time</div>
+</div>
+</div>
+<div class="job-des-dt">
+<h4>Wordpress Developer</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus pulvinar dolor nec...</p>
+<div class="job-skills">
+<a href="#">Html</a>
+<a href="#">Css</a>
+<a href="#">Wordpress</a>
+<a href="#" class="more-skills">+4</a>
+</div>
+</div>
+<div class="job-buttons">
+<ul class="link-btn">
+<li><a href="job_single_view.html" class="link-j1" title="View Job">View Job</a></li>
+<li class="bkd-pm"><button class="bookmark1" title="bookmark"><i class="fas fa-heart"></i></button></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="lg-item col-lg-6 col-xs-6 grid-group-item1">
+<div class="job-item mt-30">
+<div class="job-top-dt">
+<div class="job-left-dt">
+<img src="images/150-1503945_transparent-user-png-default-user-image-png-png.png" alt="">
+<div class="job-ut-dts">
+<a href="#"><h4>Joy S</h4></a>
+<span><i class="fas fa-map-marker-alt"></i> India</span>
+</div>
+</div>
+<div class="job-right-dt">
+<div class="job-price">$500</div>
+<div class="job-fp">Full Time</div>
+</div>
+</div>
+<div class="job-des-dt">
+<h4>Graphic Designer</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus pulvinar dolor nec...</p>
+<div class="job-skills">
+<a href="#">Illustrator</a>
+<a href="#">Photoshop</a>
+<a href="#" class="more-skills">+4</a>
+</div>
+</div>
+<div class="job-buttons">
+<ul class="link-btn">
+<li><a href="job_single_view.html" class="link-j1" title="View Job">View Job</a></li>
+<li class="bkd-pm"><button class="bookmark1" title="bookmark"><i class="fas fa-heart"></i></button></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="lg-item col-lg-6 col-xs-6 grid-group-item1">
+<div class="job-item mt-30">
+<div class="job-top-dt">
+<div class="job-left-dt">
+<img src="images/150-1503945_transparent-user-png-default-user-image-png-png.png" alt="">
+<div class="job-ut-dts">
+<a href="#"><h4>Jessica</h4></a>
+<span><i class="fas fa-map-marker-alt"></i> Australia</span>
+</div>
+</div>
+<div class="job-right-dt">
+<div class="job-price">$300</div>
+<div class="job-fp">Full Time</div>
+</div>
+</div>
+<div class="job-des-dt">
+<h4>UI Design</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus pulvinar dolor nec...</p>
+<div class="job-skills">
+<a href="#">Figma</a>
+<a href="#">Adobe</a>
+<a href="#">Canva</a>
+</div>
+</div>
+<div class="job-buttons">
+<ul class="link-btn">
+<li><a href="job_single_view.html" class="link-j1" title="View Job">View Job</a></li>
+<li class="bkd-pm"><button class="bookmark1" title="bookmark"><i class="fas fa-heart"></i></button></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="lg-item col-lg-6 col-xs-6 grid-group-item1">
+<div class="job-item mt-30">
+<div class="job-top-dt">
+<div class="job-left-dt">
+<img src="images/homepage/latest-jobs/img-6.jpg" alt="">
+<div class="job-ut-dts">
+<a href="#"><h4>Alfredo M</h4></a>
+<span><i class="fas fa-map-marker-alt"></i> India</span>
+</div>
+</div>
+<div class="job-right-dt">
+<div class="job-price">$60/hr</div>
+<div class="job-fp">Full Time</div>
+</div>
+</div>
+<div class="job-des-dt">
+<h4>Front End Developer</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus pulvinar dolor nec...</p>
+<div class="job-skills">
+<a href="#">Html</a>
+<a href="#">Css</a>
+<a href="#">Boostrap</a>
+<a href="#" class="more-skills">+4</a>
+</div>
+</div>
+<div class="job-buttons">
+<ul class="link-btn">
+<li><a href="job_single_view.html" class="link-j1" title="View Job">View Job</a></li>
+<li class="bkd-pm"><button class="bookmark1" title="bookmark"><i class="fas fa-heart"></i></button></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-12">
+<div class="main-p-pagination">
+<nav aria-label="Page navigation example">
+<ul class="pagination">
+<li class="page-item">
+<a class="page-link" href="#" aria-label="Previous">
+PREV
+</a>
+</li>
+<li class="page-item"><a class="page-link active" href="#">1</a></li>
+<li class="page-item"><a class="page-link" href="#">2</a></li>
+<li class="page-item"><a class="page-link" href="#">...</a></li>
+<li class="page-item"><a class="page-link" href="#">10</a></li>
+<li class="page-item">
+<a class="page-link" href="#" aria-label="Next">
+NEXT
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-pane" id="tab-3">
+<div class="row  view-group" id="products_2">
+<div class="lg-item col-lg-6 col-xs-6 grid-group-item1">
+<div class="job-item mt-30">
+<div class="job-top-dt">
+<div class="job-left-dt">
+<img src="images/150-1503945_transparent-user-png-default-user-image-png-png.png" alt="">
+<div class="job-ut-dts">
+<a href="#"><h4>John D</h4></a>
+<span><i class="fas fa-map-marker-alt"></i> New York City</span>
+</div>
+</div>
+<div class="job-right-dt">
+<div class="job-price">$599</div>
+<div class="job-fp job-prt">Part Time</div>
+</div>
+</div>
+<div class="job-des-dt">
+<h4>UX Designer</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus pulvinar dolor nec...</p>
+ <div class="job-skills">
+<a href="#">UX</a>
+<a href="#">UI</a>
+<a href="#">Photoshop</a>
+<a href="#" class="more-skills">+4</a>
+</div>
+</div>
+<div class="job-buttons">
+<ul class="link-btn">
+<li><a href="job_single_view.html" class="link-j1" title="View Job">View Job</a></li>
+<li class="bkd-pm"><button class="bookmark1" title="bookmark"><i class="fas fa-heart"></i></button></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="lg-item col-lg-6 col-xs-6 grid-group-item1">
+<div class="job-item mt-30">
+<div class="job-top-dt">
+<div class="job-left-dt">
+<img src="images/150-1503945_transparent-user-png-default-user-image-png-png.png" alt="">
+<div class="job-ut-dts">
+<a href="#"><h4>Johnsy M</h4></a>
+<span><i class="fas fa-map-marker-alt"></i> India</span>
+</div>
+</div>
+<div class="job-right-dt">
+<div class="job-price">$50/hr</div>
+<div class="job-fp job-prt">Part Time</div>
+</div>
+</div>
+<div class="job-des-dt">
+<h4>PHP Developer</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus pulvinar dolor nec...</p>
+<div class="job-skills">
+<a href="#">Php</a>
+<a href="#">Sql</a>
+<a href="#">Javascript</a>
+<a href="#" class="more-skills">+4</a>
+</div>
+</div>
+<div class="job-buttons">
+<ul class="link-btn">
+<li><a href="job_single_view.html" class="link-j1" title="View Job">View Job</a></li>
+<li class="bkd-pm"><button class="bookmark1" title="bookmark"><i class="fas fa-heart"></i></button></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="lg-item col-lg-6 col-xs-6 grid-group-item1">
+<div class="job-item mt-30">
+<div class="job-top-dt">
+<div class="job-left-dt">
+<img src="images/150-1503945_transparent-user-png-default-user-image-png-png.png" alt="">
+<div class="job-ut-dts">
+<a href="#"><h4>Ellisa Q</h4></a>
+<span><i class="fas fa-map-marker-alt"></i> Australia</span>
+</div>
+</div>
+<div class="job-right-dt">
+<div class="job-price">$900</div>
+<div class="job-fp job-prt">Part Time</div>
+</div>
+</div>
+<div class="job-des-dt">
+<h4>Wordpress Developer</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus pulvinar dolor nec...</p>
+<div class="job-skills">
+<a href="#">Html</a>
+<a href="#">Css</a>
+<a href="#">Wordpress</a>
+<a href="#" class="more-skills">+4</a>
+</div>
+</div>
+<div class="job-buttons">
+<ul class="link-btn">
+<li><a href="job_single_view.html" class="link-j1" title="View Job">View Job</a></li>
+<li class="bkd-pm"><button class="bookmark1" title="bookmark"><i class="fas fa-heart"></i></button></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="lg-item col-lg-6 col-xs-6 grid-group-item1">
+<div class="job-item mt-30">
+<div class="job-top-dt">
+<div class="job-left-dt">
+<img src="images/150-1503945_transparent-user-png-default-user-image-png-png.png" alt="">
+<div class="job-ut-dts">
+ <a href="#"><h4>Jay J</h4></a>
+<span><i class="fas fa-map-marker-alt"></i> India</span>
+</div>
+</div>
+<div class="job-right-dt">
+<div class="job-price">$500</div>
+<div class="job-fp job-prt">Part Time</div>
+</div>
+</div>
+<div class="job-des-dt">
+<h4>Graphic Designer</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus pulvinar dolor nec...</p>
+<div class="job-skills">
+<a href="#">Illistrator</a>
+<a href="#">Photoshop</a>
+<a href="#" class="more-skills">+4</a>
+</div>
+</div>
+<div class="job-buttons">
+<ul class="link-btn">
+<li><a href="job_single_view.html" class="link-j1" title="View Job">View Job</a></li>
+<li class="bkd-pm"><button class="bookmark1" title="bookmark"><i class="fas fa-heart"></i></button></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="lg-item col-lg-6 col-xs-6 grid-group-item1">
+<div class="job-item mt-30">
+<div class="job-top-dt">
+<div class="job-left-dt">
+<img src="images/150-1503945_transparent-user-png-default-user-image-png-png.png" alt="">
+<div class="job-ut-dts">
+<a href="#"><h4>Jassica W</h4></a>
+<span><i class="fas fa-map-marker-alt"></i> Australia</span>
+</div>
+</div>
+<div class="job-right-dt">
+<div class="job-price">$300</div>
+<div class="job-fp job-prt">Part Time</div>
+</div>
+</div>
+<div class="job-des-dt">
+<h4>Software Developer</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus pulvinar dolor nec...</p>
+<div class="job-skills">
+<a href="#">software Engineering</a>
+</div>
+</div>
+<div class="job-buttons">
+<ul class="link-btn">
+<li><a href="job_single_view.html" class="link-j1" title="View Job">View Job</a></li>
+<li class="bkd-pm"><button class="bookmark1" title="bookmark"><i class="fas fa-heart"></i></button></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="lg-item col-lg-6 col-xs-6 grid-group-item1">
+<div class="job-item mt-30">
+<div class="job-top-dt">
+<div class="job-left-dt">
+<img src="images/150-1503945_transparent-user-png-default-user-image-png-png.png" alt="">
+<div class="job-ut-dts">
+<a href="#"><h4>Ellisa Q</h4></a>
+<span><i class="fas fa-map-marker-alt"></i> India</span>
+</div>
+</div>
+<div class="job-right-dt">
+<div class="job-price">$60/hr</div>
+<div class="job-fp job-prt">Part Time</div>
+</div>
+</div>
+<div class="job-des-dt">
+<h4>Front End Developer</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus pulvinar dolor nec...</p>
+<div class="job-skills">
+<a href="#">Html</a>
+<a href="#">Css</a>
+<a href="#">Boostrap</a>
+<a href="#" class="more-skills">+4</a>
+</div>
+</div>
+<div class="job-buttons">
+<ul class="link-btn">
+<li><a href="job_single_view.html" class="link-j1" title="View Job">View Job</a></li>
+<li class="bkd-pm"><button class="bookmark1" title="bookmark"><i class="fas fa-heart"></i></button></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-12">
+<div class="main-p-pagination">
+<nav aria-label="Page navigation example">
+<ul class="pagination">
+<li class="page-item">
+<a class="page-link" href="#" aria-label="Previous">
+PREV
+</a>
+</li>
+<li class="page-item"><a class="page-link active" href="#">1</a></li>
+<li class="page-item"><a class="page-link" href="#">2</a></li>
+<li class="page-item"><a class="page-link" href="#">3</a></li>
+<li class="page-item">
+<a class="page-link" href="#" aria-label="Next">
+NEXT
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+
+
+<footer class="footer">
+<div class="subscribe-newsletter">
+<div class="container">
+<div class="row justify-content-between">
+<div class="col-lg-6 col-md-6">
+<div class="subcribes">
+<div class="text-step1">
+<h4>Subscribe to Newsletter</h4>
+<div class="btext-heading mt-2" style="color:#acacac; font-size:14px;">
+<i class="fas fa-check-circle"></i>Cras nunc mauris, rhoncus eu justo at, egestas sagittis felis. Ut sed feugiat eros.
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-5 col-md-6">
+<div class="subcribe-input">
+<input class="nltr-input" type="email" placeholder="Your Email Address">
+<button class="s-btn">Subscribe</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-md-3">
+<div class="footer-links">
+	<div class="about-jobby">
+		<img  class="logo" src="images/LOGO.png">
+	</div>
+<ul>
+<li><a href="ABOUTPAGE.html">About Us</a></li>
+<li><a href="sign_in.html">Login</a></li>
+<li><a href="my_freelancer_profile.html">My Account</a></li>
+<li><a href="contact_us.html">Contact</a></li>
+<li><a href="privacy_policy.html">Privacy Policy</a></li>
+<li><a href="Terms.html">Terms of Use</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-3">
+<div class="footer-links">
+<h4>For Clients</h4>
+<ul>
+<li><a href="browse_freelancers.html">Browse Freelancers</a></li>
+<li><a href="post_a_job.html">Post a Job</a></li>
+<li><a href="post_a_project.html">Post a Project</a></li>
+<li><a href="pricing_plans.html">Pricing Plans</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-3">
+<div class="footer-links">
+<h4>For Freelancers</h4>
+<ul>
+<li><a href="browse_jobs.html">Browse Jobs</a></li>
+<li><a href="my_freelancer_jobs.html">Jobs Alerts</a></li>
+<li><a href="my_freelancer_jobs.html">Applied Jobs</a></li>
+<li><a href="my_freelancer_bookmarks.html">Bookmarks</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="copy-social">
+<div class="container">
+<div class="row">
+<div class="col-lg-6 col-md-6">
+<div class="copyright">
+ <i class="far fa-copyright"></i>Copyright 2019 <span>Jobby</span> by <a href="#">Gambolthemes</a>. All Right Reserved.
+</div>
+</div>
+<div class="col-lg-6 col-md-6">
+<div class="social-icons">
+<ul>
+<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+
+<button onclick="topFunction()" id="pageup" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/datepicker.min.js"></script>
+<script src="js/i18n/datepicker.en.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/OwlCarousel/owl.carousel.js"></script>
+<script src="vendor/semantic/semantic.min.js"></script>
+<script src="js/jquery.range-min.js"></script>
+<script src="js/custom1.js"></script>
+<script>
+			window.oncontextmenu = function () {
+				return false;
+			}
+			$(document).keydown(function (event) {
+				if (event.keyCode == 123) {
+					return false;
+				}
+				else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)) {
+					return false;
+				}
+			});
+		</script>
+</body>
+
+</html>

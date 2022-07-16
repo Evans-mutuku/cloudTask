@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, shrink-to-fit=9">
+<meta name="description" content="Gambolthemes">
+<meta name="author" content="Gambolthemes">
+<title>Cloudtask - Checkout Plans</title>
+
+<link rel="icon" type="image/png" href="images/fav.png">
+
+<link href="css/responsive.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/datepicker.min.css" rel="stylesheet">
+<link href="css/jquery.range.css" rel="stylesheet">
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link href="vendor/OwlCarousel/assets/owl.carousel.css" rel="stylesheet">
+<link href="vendor/OwlCarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="vendor/semantic/semantic.min.css">
+</head>
+<body>
+
+<div class="modal srch-model fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-xl" role="document">
+<div class="modal-content">
+<div class="modal-header sheader">
+<button type="button" class="close srch-close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+<input type="text" class="srch-input" placeholder="Search Keywords...">
+</div>
+</div>
+</div>
+</div>
+
+<div class="title-bar">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<ol class="title-bar-text">
+<li class="breadcrumb-item"><a href="INDEXPAGE.html">Home</a></li>
+<li class="breadcrumb-item active" aria-current="page">Checkout</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+
+<main class="browse-section">
+<div class="container">
+<div class="row justify-content-md-center">
+<div class="col-md-9">
+<div class="main-heading">
+<h2>Checkout</h2>
+<div class="line-shape1">
+<img src="images/line.svg" alt="">
+</div>
+</div>
+<div class="statement_table checkout_dt">
+<div class="statement_body">
+<div class="table-responsive-md">
+<table class="table table-striped">
+<thead>
+<tr>
+<th scope="col">Description</th>
+<th scope="col">Type</th>
+<th scope="col">Price</th>
+<th scope="col">Vat (20%)</th>
+<th scope="col">Total Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">
+<div class="user_dt_trans">
+<p>Professional Plan</p>
+</div>
+</th>
+<td>
+<div class="user_dt_trans">
+<p>Monthly</p>
+</div>
+</td>
+<td>
+<div class="user_dt_trans">
+<p>$200.00</p>
+</div>
+</td>
+<td>
+<div class="user_dt_trans">
+<p>$20.00</p>
+</div>
+</td>
+<td>
+<div class="user_dt_trans">
+<p>$220.00</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row chk_pymnt">
+<div class="col-md-12">
+<div class="main-heading">
+<h2>Payment Method</h2>
+<div class="line-shape1">
+<img src="images/line.svg" alt="">
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="view_chart">
+<div class="view_chart_header">
+<div class="ui radio checkbox mt-1">
+<input type="radio" name="example1" checked="">
+<label class="chk_method" style="color:#242424 !important;">Credit or Debit Cards</label>
+</div>
+<div class="cards_right">
+<img src="images/cards.png" alt="">
+</div>
+</div>
+<div class="pymt_mthd_body">
+<div class="form-group">
+<label class="label15">Card Number*</label>
+<input type="text" class="job-input" placeholder="Enter Card Number">
+</div>
+<div class="form-group">
+<label class="label15">Full Name*</label>
+<input type="text" class="job-input" placeholder="Enter Full Name">
+</div>
+<div class="fdsf452">
+<div class="row">
+<div class="col-lg-6">
+<div class="form-group">
+<label class="label15">Expiring*</label>
+<input type="text" class="job-input datepicker-here" data-language="en" data-min-view="months" data-view="months" data-date-format="MM yyyy" placeholder="Expiring">
+</div>
+</div>
+<div class="col-lg-6">
+<div class="form-group">
+<label class="label15">Cvv*</label>
+<input type="text" class="job-input" placeholder="Enter Cvv">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="view_chart">
+<div class="view_chart_header">
+<div class="ui radio checkbox mt-1">
+<input type="radio" name="example1">
+<label class="chk_method" style="color:#242424 !important;">Paypal</label>
+</div>
+<div class="cards_right">
+<img src="images/paypal.png" alt="">
+</div>
+</div>
+<div class="pymt_mthd_body">
+<div class="form-group">
+<label class="label15">Email Address*</label>
+<input type="email" class="job-input" placeholder="Enter Email Address">
+</div>
+<p>You will be redirected to PayPal to complete payment.</p>
+</div>
+</div>
+</div>
+<div class="col-md-12">
+<div class="ui checkbox apply_check check_out">
+<input type="checkbox" tabindex="0" class="hidden">
+<label style="color:#242424 !important;">I agree to the Terms and Conditions and the Automatic Renewal Terms</label>
+</div>
+<button class="post_jp_btn" type="submit">PROCEED PAYMENT</button>
+</div>
+</div>
+</div>
+</main>
+
+
+<footer class="footer">
+<div class="subscribe-newsletter">
+<div class="container">
+<div class="row justify-content-between">
+<div class="col-lg-6 col-md-6">
+<div class="subcribes">
+<div class="text-step1">
+<h4>Subscribe to Newsletter</h4>
+<div class="btext-heading mt-2" style="color:#acacac; font-size:14px;">
+<i class="fas fa-check-circle"></i>Cras nunc mauris, rhoncus eu justo at, egestas sagittis felis. Ut sed feugiat eros.
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-5 col-md-6">
+<div class="subcribe-input">
+<input class="nltr-input" type="email" placeholder="Your Email Address">
+<button class="s-btn">Subscribe</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-md-3">
+	<div class="about-jobby">
+		<img  class="logo" src="images/LOGO.png">
+	</div>
+</div>
+<div class="col-lg-3 col-md-3">
+<div class="footer-links">
+<h4>About</h4>
+<ul>
+<li><a href="ABOUTPAGE.html">About Us</a></li>
+<li><a href="sign_in.html">Login</a></li>
+<li><a href="contact_us.html">Contact</a></li>
+<li><a href="privacy_policy.html">Privacy Policy</a></li>
+<li><a href="Terms.html">Terms of Use</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-3">
+<div class="footer-links">
+<h4>For Clients</h4>
+<ul>
+<li><a href="browse_freelancers.html">Browse Freelancers</a></li>
+<li><a href="post_a_job.html">Post a Job</a></li>
+<li><a href="post_a_project.html">Post a Project</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-3">
+<div class="footer-links">
+<h4>For Freelancers</h4>
+<ul>
+<li><a href="browse_jobs.html">Browse Jobs</a></li>
+<li><a href="my_freelancer_jobs.html">Jobs Alerts</a></li>
+<li><a href="my_freelancer_jobs.html">Applied Jobs</a></li>
+<li><a href="my_freelancer_bookmarks.html">Bookmarks</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="copy-social">
+<div class="container">
+<div class="row">
+<div class="col-lg-6 col-md-6">
+<div class="copyright">
+<i class="far fa-copyright"></i>Copyright 2022 Cloudtask. All Right Reserved.
+</div>
+</div>
+<div class="col-lg-6 col-md-6">
+<div class="social-icons">
+<ul>
+<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+
+<button onclick="topFunction()" id="pageup" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/datepicker.min.js"></script>
+<script src="js/i18n/datepicker.en.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/OwlCarousel/owl.carousel.js"></script>
+<script src="vendor/semantic/semantic.min.js"></script>
+<script src="js/jquery.range-min.js"></script>
+<script src="js/custom1.js"></script>
+<script>
+			window.oncontextmenu = function () {
+				return false;
+			}
+			$(document).keydown(function (event) {
+				if (event.keyCode == 123) {
+					return false;
+				}
+				else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)) {
+					return false;
+				}
+			});
+		</script>
+</body>
+
+</html>

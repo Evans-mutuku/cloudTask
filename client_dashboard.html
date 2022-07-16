@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, shrink-to-fit=9">
+<meta name="description" content="Gambolthemes">
+<meta name="author" content="Gambolthemes">
+<title>Cloudtask- My Freelancer Dashboard</title>
+
+<link rel="icon" type="image/png" href="images/fav.png">
+
+<link href="css/responsive.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/datepicker.min.css" rel="stylesheet">
+<link href="css/jquery.range.css" rel="stylesheet">
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link href="vendor/OwlCarousel/assets/owl.carousel.css" rel="stylesheet">
+<link href="vendor/OwlCarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="vendor/semantic/semantic.min.css">
+
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+
+<div class="modal srch-model fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-xl" role="document">
+<div class="modal-content">
+<div class="modal-header sheader">
+<button type="button" class="close srch-close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+<input type="text" class="srch-input" placeholder="Search Keywords...">
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="apply_job_form">
+<div class="modal fade" id="addnoteModal" tabindex="-1" role="dialog">
+<div class="modal-dialog modal-jb" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">Add Note</h5>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+<div class="jb_frm">
+<h3>Do Not Forget.</h3>
+<div class="form_inputs">
+<div class="form-group">
+<div class="ui fluid search selection dropdown skills-search">
+<input name="tags" type="hidden" value="">
+<i class="dropdown icon"></i>
+<input class="search" autocomplete="off" tabindex="0">
+<span class="sizer" style=""></span>
+<div class="default text">Priorty</div>
+<div class="menu transition hidden" tabindex="-1">
+<div class="item selected" data-value="Job1">High Priorty</div>
+<div class="item" data-value="Job2">Medium Priorty</div>
+<div class="item" data-value="Job3">Low Priorty</div>
+</div>
+</div>
+</div>
+<div class="form-group">
+<textarea class="note-input" placeholder="Note"></textarea>
+</div>
+<div class="apply_btn150">
+<button class="apply_job50" type="button">ADD NOTE</button>
+<button class="apply_job_close" type="button" data-dismiss="modal">CANCEL</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<header>
+<div class="top-header">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12">
+<div class="top-header-full">
+<div class="top-left-hd">
+
+</div>
+<div class="top-right-hd">
+<ul>
+ 
+<li>
+<div class="account order-1 dropdown">
+<a href="#" class="account-link dropdown-toggle-no-caret" role="button" data-toggle="dropdown">
+<div class="user-dp"><img src="images/150-1503945_transparent-user-png-default-user-image-png-png.png" alt=""></div>
+<span>Hi! User</span>
+<i class="fas fa-sort-down"></i>
+</a>
+<div class="dropdown-menu account-dropdown dropdown-menu-right">
+<a class="link-item" href="client_setting.html">Profile</a>
+<a class="link-item" href="client_setting.html">Setting</a>
+<a class="link-item" href="client_messages.html">My Messages</a>
+<a class="link-item" href="client_projects.html">My Projects</a>
+<a class="link-item" href="my_freelancer_portfolio.html">My Portfolio</a>
+<a class="link-item" href="my_freelancer_payments.html">Payments</a>
+<a class="link-item" href="sign_in.html">Logout</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sub-header">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12">
+<nav class="navbar navbar-expand-lg navbar-light bg-dark1 justify-content-sm-start">
+<button class="navbar-toggler align-self-start" type="button">
+<i class="fas fa-bars"></i>
+</button>
+<div class="collapse navbar-collapse d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end bg-dark1 p-3 p-lg-0 mt1-5 mt-lg-0 mobileMenu" id="navbarSupportedContent">
+<ul class="navbar-nav align-self-stretch">
+<li class="nav-item active">
+<a class="nav-link" href="INDEXPAGE.html">Home <span class="sr-only">(current)</span></a>
+</li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle-no-caret" role="button" data-toggle="dropdown">Find Jobs</a>
+<div class="dropdown-menu pages-dropdown">
+<a class="link-item" href="browse_jobs.html">Browse Jobs</a>
+<a class="link-item" href="job_single_view.html">Single Job View</a>
+<a class="link-item" href="post_a_job.html">Post a Job</a>
+</div>
+</li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle-no-caret" role="button" data-toggle="dropdown">Find Work</a>
+<div class="dropdown-menu pages-dropdown">
+<a class="link-item" href="browse_projects.html">Browse Projects</a>
+<a class="link-item" href="project_single_view.html">Single Project View</a>
+<a class="link-item" href="post_a_project.html">Post a Project</a>
+</div>
+</li>
+<li class="nav-item dropdown">
+<a href="#" class="nav-link dropdown-toggle-no-caret" role="button" data-toggle="dropdown">Find Freelancers</a>
+<div class="dropdown-menu pages-dropdown">
+<a class="link-item" href="browse_freelancers.html">Browse Freelancers</a>
+<a class="link-item" href="other_freelancer_profile.html">Freelancer Profile</a>
+</div>
+</li>
+<li class="nav-item dropdown pages152">
+<a href="#" class="nav-link dropdown-toggle-no-caret" role="button" data-toggle="dropdown">
+Pages <i class="fas fa-caret-down p-crt"></i>
+</a>
+<div class="dropdown-menu pages-dropdown">
+<a class="link-item" href="ABOUTPAGE.html">About</a>
+<a class="link-item" href="our_blog.html">Our Blog</a>
+<a class="link-item" href="pricing_plans.html">Pricing Plans</a>
+<a class="link-item" href="checkout.html">Checkout</a>
+<a class="link-item" href="plan_invoice.html">Invoice Slip</a>
+<a class="link-item" href="sign_in.html">Sign in</a>
+<a class="link-item" href="sign_up.html">Sign up</a>
+<a class="link-item" href="client_profile.html">Create Client Profile</a>
+<a class="link-item" href="contact_us.html">Contact</a>
+<a class="link-item" href="help_center.html">Help Center</a>
+</div>
+</li>
+</ul>
+<a href="#" class="search-link" role="button" data-toggle="modal" data-target="#searchModal"><i class="fas fa-search"></i></a>
+<a href="post_a_job.html" class="add-post">Post a Job</a>
+<a href="post_a_project.html" class="add-task">Post a Task</a>
+</div>
+<div class="responsive-search order-1">
+<input type="text" class="rsp-search" placeholder="Search...">
+<i class="fas fa-search r-sh1"></i>
+</div>
+</nav>
+<div class="overlay"></div>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+
+<div class="title-bar">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<ol class="title-bar-text">
+<li class="breadcrumb-item"><a href="INDEXPAGE.html">Home</a></li>
+<li class="breadcrumb-item active" aria-current="page">My Account</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+
+<main class="browse-section">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-md-4">
+<div class="account_dt_left">
+<div class="job-center-dt">
+<img src="images/150-1503945_transparent-user-png-default-user-image-png-png.png" alt="">
+<div class="job-urs-dts">
+<div class="dp_upload">
+<input type="file" id="file">
+<label for="file">Upload Photo</label>
+</div>
+<h4>John K</h4>
+<span>UX Designer</span>
+<div class="avialable">Available Full Time<a href="#"><i class="far fa-edit"></i></a></div>
+</div>
+</div>
+<div class="my_websites">
+<ul>
+<li><a href="#" class="web_link"><i class="fas fa-globe"></i>www.companysite.com</a></li>
+<li><a href="#" class="web_link"><i class="far fa-edit"></i>www.blogsite.com</a></li>
+</ul>
+</div>
+<div class="group_skills_bar">
+<h6>Profile Completeness</h6>
+<div class="group_bar1">
+<span>85%</span>
+<div class="progress skill_process">
+<div class="progress-bar progress_bar_skills" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+</div>
+<a href="#" class="skiils_button">Complete Required Skills</a>
+</div>
+<div class="rlt_section">
+<div class="rtl_left">
+<h6>Rating</h6>
+</div>
+<div class="rtl_right">
+<div class="star">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<span>4.9</span>
+</div>
+</div>
+</div>
+<div class="rlt_section">
+<div class="rtl_left">
+<h6>Location</h6>
+</div>
+<div class="rtl_right">
+<span><i class="fas fa-map-marker-alt lc_icon"></i> Nairobi, Kenya</span>
+</div>
+<div class="my_location">
+<div id="map"></div>
+</div>
+<ul class="rlt_section2">
+<li>
+<div class="rtl_left2">
+<h6>Hourly Rate</h6>
+</div>
+<div class="rtl_right2">
+<span>$50 / hr</span>
+</div>
+</li>
+<li>
+<div class="rtl_left2">
+<h6>Age</h6>
+</div>
+<div class="rtl_right2">
+<span>28</span>
+</div>
+</li>
+<li>
+<li>
+<div class="rtl_left2">
+<h6>Job D</h6>
+</div>
+<div class="rtl_right2">
+<span>69</span>
+</div>
+</li>
+</ul>
+</div>
+<div class="social_section3 mb80">
+<div class="social_leftt3">
+<h6>Contact Social Account</h6>
+</div>
+<div class="social_right3">
+<a href="#"><i class="far fa-edit"></i></a>
+</div>
+<ul class="social_accounts">
+<li><a href="#" class="social_links"><i class="fab fa-facebook-f f1"></i>http://facebook.com/immuli</a></li>
+<li><a href="#" class="social_links"><i class="fab fa-twitter t1"></i>http://twitter.com/immuli</a></li>
+<li><a href="#" class="social_links"><i class="fab fa-linkedin-in l1"></i>http://linkedin.com/immuli</a></li>
+<li><a href="#" class="social_links"><i class="fab fa-github g1"></i>http://github.com/immuli</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-lg-9 col-md-8 mainpage">
+<div class="account_heading">
+<div class="account_hd_left">
+<h2>Manage Your Account</h2>
+</div>
+<div class="account_hd_right">
+<a href="#" class="main_lg_btn">Logout</a>
+</div>
+</div>
+<div class="account_tabs">
+<ul class="nav nav-tabs">
+<li class="nav-item">
+<a class="nav-link" href="client_profile.html">Profile</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="client_portfolio.html">Portfolio</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="client_messages.html">Messages</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="client_jobs.html">Jobs</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="client_reviews.html">Reviews</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="client_payments.html">Payment</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="client_setting.html"><i class="fas fa-cog"></i></a>
+</li>
+</ul>
+</div>
+<div class="total_1254">
+<div class="row">
+<div class="col-lg-4 col-12">
+<div class="collection_item">
+<div class="coll_icon">
+<i class="fas fa-suitcase col_icon1"></i>
+</div>
+<h4>Projects</h4>
+<span>30</span>
+</div>
+</div>
+<div class="col-lg-4 col-12">
+<div class="collection_item">
+<div class="coll_icon">
+<i class="fas fa-heart col_icon3"></i>
+</div>
+<h4>Favourites</h4>
+<span>20</span>
+</div>
+</div>
+</div>
+</div>
+<div class="view_chart">
+<div class="view_chart_header">
+<h4 class="mt-2">Your Profile View</h4>
+<div class="date_selector">
+<div class="ui selection dropdown skills-search vchrt-dropdown">
+<input name="gender" type="hidden" value="default">
+<i class="dropdown icon d-icon"></i>
+<div class="text">Last 6 Months</div>
+<div class="menu">
+<div class="item" data-value="0">Last 6 Months</div>
+<div class="item" data-value="1">This Year</div>
+<div class="item" data-value="2">This Month</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="dsh150">
+<div class="row">
+<div class="col-lg-7">
+<div class="view_chart">
+<div class="view_chart_header">
+<h4>Projects</h4>
+</div>
+<div class="view_applied_jobs_body">
+<ul class="all_applied_jobs scrollstyle_4">
+<li>
+<div class="applied_item">
+<a href="#">Wordpress Developer</a>
+<ul class="view_dt_job">
+<li><div class="vw1254"><i class="fas fa-map-marker-alt"></i>Australia</div></li>
+<li><div class="vw1254"><i class="fas fa-briefcase"></i>Full Time</div></li>
+<li><div class="vw1254"><i class="far fa-money-bill-alt"></i>$599 - Manual</div></li>
+<li><div class="vw1254"><i class="far fa-clock"></i>1 day ago</div></li>
+</ul>
+<div class="btn_link23">
+<button class="apled_btn50">Posted</button>
+</div>
+</div>
+</li>
+<li>
+<div class="applied_item">
+<a href="#">Front End Developer</a>
+<ul class="view_dt_job">
+<li><div class="vw1254"><i class="fas fa-map-marker-alt"></i>Australia</div></li>
+<li><div class="vw1254"><i class="fas fa-briefcase"></i>Part Time</div></li>
+<li><div class="vw1254"><i class="far fa-money-bill-alt"></i>$50 / hr</div></li>
+<li><div class="vw1254"><i class="far fa-clock"></i>2 day ago</div></li>
+</ul>
+<div class="btn_link23">
+<button class="apled_btn50">Posted</button>
+</div>
+</div>
+</li>
+<li>
+<div class="applied_item">
+<a href="#">Back End Developer</a>
+<ul class="view_dt_job">
+<li><div class="vw1254"><i class="fas fa-map-marker-alt"></i>India</div></li>
+<li><div class="vw1254"><i class="fas fa-briefcase"></i>Full Time</div></li>
+<li><div class="vw1254"><i class="far fa-money-bill-alt"></i>$1200 - Fixed</div></li>
+<li><div class="vw1254"><i class="far fa-clock"></i>4 day ago</div></li>
+</ul>
+<div class="btn_link23">
+<button class="apled_btn50">Posted</button>
+</div>
+</div>
+</li>
+<li>
+<div class="applied_item">
+<a href="#">Wordpress Developer</a>
+<ul class="view_dt_job">
+<li><div class="vw1254"><i class="fas fa-map-marker-alt"></i>Australia</div></li>
+<li><div class="vw1254"><i class="fas fa-briefcase"></i>Full Time</div></li>
+<li><div class="vw1254"><i class="far fa-money-bill-alt"></i>$700 - Manual</div></li>
+<li><div class="vw1254"><i class="far fa-clock"></i>5 day ago</div></li>
+</ul>
+<div class="btn_link23">
+<button class="apled_btn50">Posted</button>
+</div>
+</div>
+</li>
+</ul>
+<a href="#" class="btn-veiw10">View All</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+
+
+<footer class="footer">
+<div class="subscribe-newsletter">
+<div class="container">
+<div class="row justify-content-between">
+<div class="col-lg-6 col-md-6">
+<div class="subcribes">
+<div class="text-step1">
+<h4>Subscribe to Newsletter</h4>
+<div class="btext-heading mt-2" style="color:#acacac; font-size:14px;">
+<i class="fas fa-check-circle"></i>Cras nunc mauris, rhoncus eu justo at, egestas sagittis felis. Ut sed feugiat eros.
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-5 col-md-6">
+<div class="subcribe-input">
+<input class="nltr-input" type="email" placeholder="Your Email Address">
+<button class="s-btn">Subscribe</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-md-3">
+	<div class="about-jobby">
+		<img  class="logo" src="images/LOGO.png">
+	</div>
+</div>
+<div class="col-lg-3 col-md-3">
+<div class="footer-links">
+<h4>About</h4>
+<ul>
+<li><a href="ABOUTPAGE.html">About Us</a></li>
+<li><a href="sign_in.html">Login</a></li>
+<li><a href="client_dashboard.html">My Account</a></li>
+<li><a href="contact_us.html">Contact</a></li>
+<li><a href="privacy_policy.html">Privacy Policy</a></li>
+<li><a href="Terms.html">Terms of Use</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-3">
+<div class="footer-links">
+<h4>For Clients</h4>
+<ul>
+<li><a href="browse_freelancers.html">Browse Freelancers</a></li>
+<li><a href="post_a_job.html">Post a Job</a></li>
+<li><a href="post_a_project.html">Post a Project</a></li>
+<li><a href="pricing_plans.html">Pricing Plans</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-3">
+<div class="footer-links">
+<h4>For Freelancers</h4>
+<ul>
+<li><a href="browse_jobs.html">Browse Jobs</a></li>
+<li><a href="my_freelancer_jobs.html">Jobs Alerts</a></li>
+<li><a href="my_freelancer_jobs.html">Applied Jobs</a></li>
+<li><a href="my_freelancer_bookmarks.html">Bookmarks</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="copy-social">
+<div class="container">
+<div class="row">
+<div class="col-lg-6 col-md-6">
+<div class="copyright">
+<i class="far fa-copyright"></i>Copyright 2022 Cloudtask. All Right Reserved.
+</div>
+</div>
+<div class="col-lg-6 col-md-6">
+<div class="social-icons">
+<ul>
+<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+
+<button onclick="topFunction()" id="pageup" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/datepicker.min.js"></script>
+<script src="js/i18n/datepicker.en.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/OwlCarousel/owl.carousel.js"></script>
+<script src="vendor/semantic/semantic.min.js"></script>
+<script src="js/jquery.range-min.js"></script>
+<script src="js/custom1.js"></script>
+<script src="js/chart-1.js"></script>
+<script src="js/chart-views.js"></script>
+<script src="js/chart-pie.js"></script>
+<script src="js/Chart.min.js"></script>
+
+<script src='https://unpkg.com/es6-promise@4.2.4/dist/es6-promise.auto.min.js'></script>
+<script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
+<script>
+			mapboxgl.accessToken = 'pk.eyJ1IjoiZ2FtYm9sIiwiYSI6ImNqdm03bzYydDE2cW00YWwyeHprd3FqamcifQ.HBy4R4sRcXgbgn2OteqFkQ';
+			var mapboxClient = mapboxSdk({ accessToken: mapboxgl.accessToken });
+			mapboxClient.geocoding.forwardGeocode({
+			query: 'Ludhiana, India',
+			autocomplete: false,
+			limit: 1
+			})
+			.send()
+			.then(function (response) {
+			if (response && response.body && response.body.features && response.body.features.length) {
+			var feature = response.body.features[0];
+		 
+			var map = new mapboxgl.Map({
+			container: 'map',
+			style: 'mapbox://styles/mapbox/streets-v11',
+			center: [75.8429,30.9042],
+			zoom: 10
+			});				
+  
+			new mapboxgl.Marker()
+			.setLngLat(feature.center)
+			.addTo(map);
+			}
+			
+			// Add zoom and rotation controls to the map.
+			map.addControl(new mapboxgl.NavigationControl());
+			});						
+		</script>
+<script>
+			window.oncontextmenu = function () {
+				return false;
+			}
+			$(document).keydown(function (event) {
+				if (event.keyCode == 123) {
+					return false;
+				}
+				else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)) {
+					return false;
+				}
+			});
+		</script>
+</body>
+
+</html>

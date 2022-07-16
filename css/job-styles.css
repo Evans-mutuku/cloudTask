@@ -1,0 +1,5 @@
+.cardbd > h4{
+    border-radius: 4px;
+    border: 2px solid gray;
+    color: red !important;
+}

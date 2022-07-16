@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, shrink-to-fit=9">
+	<meta name="description" content="Gambolthemes">
+	<meta name="author" content="Gambolthemes">
+	<title>Cloudtask - Post a Job</title>
+
+	<link rel="icon" type="image/png" href="images/fav.png">
+
+	<link href="css/responsive.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/datepicker.min.css" rel="stylesheet">
+	<link href="css/jquery.range.css" rel="stylesheet">
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+	<link href="vendor/OwlCarousel/assets/owl.carousel.css" rel="stylesheet">
+	<link href="vendor/OwlCarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="vendor/semantic/semantic.min.css">
+	<link rel="stylesheet" href="./css/job-styles.css">
+	<script src="./js/UPLOADJOB/upload-job.js" type="module"></script>
+</head>
+
+<body>
+
+	<div class="modal srch-model fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-xl" role="document">
+			<div class="modal-content">
+				<div class="modal-header sheader">
+					<button type="button" class="close srch-close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<input type="text" class="srch-input" placeholder="Search Keywords...">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="title-bar">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<ol class="title-bar-text">
+						<li class="breadcrumb-item"><a href="INDEXPAGE.html">Home</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Post a Job</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<main class="browse-section">
+		<div class="container d-flex">
+			
+			<div class="row">
+				<div class="col-md-8">
+					<div class="main-heading bids_heading">
+						<h2>Post a Job</h2>
+						<div class="line-shape1">
+							<img src="images/line.svg" alt="">
+						</div>
+					</div>
+					<div class="post501">
+
+						<form id="jobs-form">
+
+							<div class="row">
+								<div class="col-lg-12">
+
+									<div class="form-group">
+										<label class="label15">Job Name*</label>
+										<input type="text" id="job-name" class="job-input" placeholder="Job Name Here">
+									</div>
+
+									<div class="form-group">
+										<label class="label15">Job Description*</label>
+										<textarea class="textarea_input" id="job-description"
+											placeholder="Type Description"></textarea>
+									</div>
+
+								</div>
+								<div class="col-lg-12">
+									<div class="requires">
+										What are the job requirements
+									</div>
+								</div>
+								<div class="col-lg-6">
+
+									<div class="form-group">
+										<label class="label15">Availability*</label>
+										<input type="text" id="availability" class="job-input" placeholder="Available in 2 weeks">
+									</div>
+								</div>
+
+								<div class="col-lg-6">
+									<div class="form-group">
+										<label class="label15">Experience*</label>
+										<input type="text" id="experience" class="job-input"
+											placeholder="5 years of experience">
+									</div>
+								</div>
+
+								<div class="col-lg-6">
+									<div class="form-group">
+										<label class="label15"> Min Expected Salary*</label>
+										<div class="smm_input">
+											<input type="text" id="min-sal" class="job-input" placeholder="Min">
+											<div class="mix_max">Ksh</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="form-group">
+										<label class="label15">Max Expected Salary*</label>
+										<div class="smm_input">
+											<input type="text" id="max-sal" class="job-input" placeholder="Max">
+											<div class="mix_max">Ksh</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="form-group">
+										<label class="label15">Location*</label>
+										<div class="smm_input">
+											<input type="text" id="location" class="job-input"
+												placeholder="Type Address">
+											<div class="loc_icon"><i class="fas fa-map-marker-alt"></i></div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-lg-12">
+									<div class="form-group">
+										<label class="label15">Skills*</label>
+										<input type="text" id="skills" class="job-input"
+											placeholder="Javascript, Python">
+									</div>
+								</div>
+									<div class="col-lg-12">
+									<div class="form-group">
+										<label class="label15">Application Email*</label>
+										<input type="email" id="applyEmail" class="job-input"
+											placeholder="example@gmail.com">
+									</div>
+								</div>
+
+								<div class="col-lg-12">
+									<button class="post_jp_btn" id="btn-job-form" type="submit">Post a Job</button>
+								</div>
+							</div>
+						</form>
+
+
+					</div>
+				</div>
+			</div>
+
+				<div class="col-md-4">
+			<div class="main-heading bids_heading pjfaq80">
+				<h2>FAQ</h2>
+			</div>
+			<div class="jp_faq">
+				<div class="jp_faq_item">
+					<h4>01. Is there a fee to post a job?</h4>
+					<p>There are pricing plans monthly and yearly for jobs on Jobby. It is a paid service that we offer
+						bith for the employer and the freelancer.</p>
+				</div>
+				<div class="jp_faq_item">
+					<h4>02. How do I find freelancers for my job?</h4>
+					<p>Posting a job on Jobby will get your job in front of the most qualified freelancers and agencies.
+						You will then get applications for the job with the applicant’s details and reasons why they are
+						the best fit for the job. You can also search for freelancers and invite them to apply.</p>
+				</div>
+				<div class="jp_faq_item">
+					<h4>03. How do I pay freelancers and agencies?</h4>
+					<p>You’re free to pay your freelancer and agencies. you can pay automatically for their work through
+						Paypal, Payoneer, or (which allows you to pay via credit card, debit card).</p>
+				</div>
+			</div>
+		</div>
+		</div>
+		  <!-- <div class="col-md-5 d-flex" id="tasks-container"></div> -->
+		
+		
+		</div>
+	</main>
+
+
+	<footer class="footer">
+		<div class="subscribe-newsletter">
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-lg-6 col-md-6">
+						<div class="subcribes">
+							<div class="text-step1">
+								<h4>Subscribe to Newsletter</h4>
+								<div class="btext-heading mt-2" style="color:#acacac; font-size:14px;">
+									<i class="fas fa-check-circle"></i>Cras nunc mauris, rhoncus eu justo at, egestas
+									sagittis felis. Ut sed feugiat eros.
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-5 col-md-6">
+						<div class="subcribe-input">
+							<input class="nltr-input" type="email" placeholder="Your Email Address">
+							<button class="s-btn">Subscribe</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3">
+					<div class="about-jobby">
+						<img class="logo" src="images/LOGO.png">
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3">
+					<div class="footer-links">
+						<h4>About</h4>
+						<ul>
+							<li><a href="ABOUTPAGE.html">About Us</a></li>
+							<li><a href="sign_in.html">Login</a></li>
+							<li><a href="my_client_profile.html">My Account</a></li>
+							<li><a href="contact_us.html">Contact</a></li>
+							<li><a href="privacy_policy.html">Privacy Policy</a></li>
+							<li><a href="Terms.html">Terms of Use</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3">
+					<div class="footer-links">
+						<h4>For Clients</h4>
+						<ul>
+							<li><a href="browse_freelancers.html">Browse Freelancers</a></li>
+							<li><a href="post_a_job.html">Post a Job</a></li>
+							<li><a href="post_a_project.html">Post a Project</a></li>
+							<li><a href="pricing_plans.html">Pricing Plans</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3">
+					<div class="footer-links">
+						<h4>For Freelancers</h4>
+						<ul>
+							<li><a href="browse_jobs.html">Browse Jobs</a></li>
+							<li><a href="my_freelancer_jobs.html">Jobs Alerts</a></li>
+							<li><a href="my_freelancer_jobs.html">Applied Jobs</a></li>
+							<li><a href="my_freelancer_bookmarks.html">Bookmarks</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copy-social">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-6">
+						<div class="copyright">
+							<i class="far fa-copyright"></i>Copyright 2022. All Right Reserved.
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6">
+						<div class="social-icons">
+							<ul>
+								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+								<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<button onclick="topFunction()" id="pageup" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/datepicker.min.js"></script>
+	<script src="js/i18n/datepicker.en.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="vendor/OwlCarousel/owl.carousel.js"></script>
+	<script src="vendor/semantic/semantic.min.js"></script>
+	<script src="js/jquery.range-min.js"></script>
+	<script src="js/custom1.js"></script>
+	<script>
+		window.oncontextmenu = function () {
+			return false;
+		}
+		$(document).keydown(function (event) {
+			if (event.keyCode == 123) {
+				return false;
+			}
+			else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)) {
+				return false;
+			}
+		});
+	</script>
+</body>
+
+</html>
